@@ -1,7 +1,7 @@
 {
   "name": "kafka-streams",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/jlarteaga/kafka-streams",
   "author": "Jorge Luis Arteaga Almaraz",
   "license": "MIT",
@@ -10,8 +10,12 @@
     "build": "rollup --config"
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@tsconfig/node20": "^20.1.0",
     "cz-conventional-changelog": "^3.3.0",
-    "rollup": "^3.26.3"
+    "rollup": "^3.26.3",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6"
   },
   "dependencies": {
     "global": "^4.4.0"
