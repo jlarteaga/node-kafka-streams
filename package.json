@@ -1,0 +1,18 @@
+{
+  "name": "kafka-streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jlarteaga/kafka-streams",
+  "author": "Jorge Luis Arteaga Almaraz",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "devDependencies": {
+    "rollup": "^3.26.3"
+  },
+  "dependencies": {
+    "global": "^4.4.0"
+  }
+}
