@@ -1,1 +1,1 @@
-console.log(':D');
+export * from './say-hi';
