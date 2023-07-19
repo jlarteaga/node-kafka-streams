@@ -10,9 +10,15 @@
     "build": "rollup --config"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "rollup": "^3.26.3"
   },
   "dependencies": {
     "global": "^4.4.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
