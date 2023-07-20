@@ -1,1 +1,1 @@
-export * from './k-storage';
+export { KStorage } from './lib/k-storage';
