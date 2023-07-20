@@ -1,1 +1,1 @@
-export * from './say-hi';
+export * from './k-storage';
