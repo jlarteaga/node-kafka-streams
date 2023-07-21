@@ -94,11 +94,6 @@ export class KafkaJsClient extends KafkaClient {
 
     //consumer has to wait for producer
     super.once(KafkaJsClient.events.PRODUCER_READY, () => {
-      const streamOptions = {
-        asString: false,
-        asJSON: false
-      };
-
       this.consumer
         ?.connect()
         .then(
@@ -208,13 +203,13 @@ export class KafkaJsClient extends KafkaClient {
     };
   }
 
-  close(commit = false) {
+  close() {
     this.consumer?.disconnect();
     this.producer?.disconnect();
   }
 
   //required by KTable
-  closeConsumer(commit = false) {
+  closeConsumer() {
     this.consumer?.disconnect();
     this.consumer = undefined;
   }
